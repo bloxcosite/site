@@ -34,16 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5">Discord</a>, 
   and make new friends!
 </div>
-
-<!-- HROTM CLOSED <div class="alert alert-blurple" style="display: block !important;">
-<strong>
-  <img src="https://cdn.discordapp.com/emojis/1152674422952566875.webp?size=96&quality=lossless" style="max-height: 25px;"/>
-  HROTM</strong>:
-Votes for High Rank of The Month of October 2023 are out! 
-  <a href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5">Join our Discord server</a>, 
-and vote using /hrotm! You have <strong><span id="hrotmcountdown">loading time...</span></strong> remaining.
-</div> -->
-  
   `;
 
   alertcontainer.innerHTML = alerts;
@@ -155,6 +145,7 @@ if (maintenance) {
                 or
                 <a href="https://discord.gg/bloxcosupermarket" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
               </p>
+      </div>
   `
 
   if (document.getElementById('s2')) {
