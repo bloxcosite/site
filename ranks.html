@@ -14,11 +14,19 @@
 </head>
 
 <body class="dark-mode">
-  <!-- NAVBAR START -->
-  <nav class="navbar text-light  navbar-expand-lg dark-mode" style="margin-bottom: 10px;" id="navbar">
-  <!-- automatically updating header -->
-  </nav>
-  <!-- NAVBAR END -->
+  <nav class="navbar navbar-expand-lg text-light dark-mode" style="margin-bottom: 10px;" style="margin-bottom: 10px;" id="navbar">
+    <div class="container-fluid">
+        <img class="navbar-brand" style="height:100px;width:150px;"
+        src="../img/BloxcoLogo.png" draggable="false" id="nav-logo"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-maincontent" aria-controls="nav-maincontent" aria-expanded="false" aria-label="Toggle navigation" style="filter: invert(0.5);">
+        <span class="navbar-toggler-icon" style="filter: invert(0.5);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-maincontent">
+      </div>
+      <form class="d-flex" id="nav-addon">
+        </form>
+    </div>
+</nav>
 
   <div id="alert-container">
     
@@ -75,7 +83,7 @@
                 </ul>
                 <hr>
                 <p>Choose your <span class="accent">preferred</span> payment type:</p>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary disabled">Robux</button>
+                <button type="button" class="btn btn-lg btn-block btn-outline-grey disabled">Robux</button>
                 <button type="button" class="btn btn-lg btn-block btn-primary" data-shoppy-product="282wmGT">USD</button> <br/>
               </div>
             </div>
@@ -122,7 +130,7 @@
                       </ul>
                     <hr>
                     <p>Choose your <span class="accent">preferred</span> payment type:</p>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary disabled">Robux</button>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-grey disabled">Robux</button>
                     <button type="button" class="btn btn-lg btn-block btn-primary" data-shoppy-product="yZMErTW">USD</button> <br/>
                   </div>
                 </div>
@@ -147,7 +155,7 @@
                         </ul>
                         <hr>
                         <p>Choose your <span class="accent">preferred</span> payment type:</p>
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary disabled">Robux</button>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-grey disabled">Robux</button>
                         <button type="button" class="btn btn-lg btn-block btn-primary" data-shoppy-product="0HGo1hQ">USD</button> <br/>
                       </div>
                     </div>
@@ -171,7 +179,7 @@
                             </ul>
                             <hr>
                             <p>Choose your <span class="accent">preferred</span> payment type:</p>
-                            <button type="button" class="btn btn-lg btn-block btn-outline-primary disabled">Robux</button>
+                            <button type="button" class="btn btn-lg btn-block btn-outline-grey disabled">Robux</button>
                             <button type="button" class="btn btn-lg btn-block btn-primary" data-shoppy-product="yG7fyBv">USD</button> <br/>
                           </div>
                         </div>
@@ -183,7 +191,9 @@
                                 <h4 class="my-0 font-weight-normal">Director</h4> 
                               </div>
                               <div class="card-body">
-                                <h1 class="card-title pricing-card-title">$49.99 <span class="badge bg-warning">Best Deal</span></h1>
+                                <h1 class="text-h1 position-absolute top-0 start-100 translate-middle badge bg-success">
+                                  BEST DEAL
+                                </h1>
                                 <ul class="list-unstyled mt-3 mb-4">
                                   <li class="text-success">✔️ Skip the training</li>
                                   <li class="text-success">✔️ Get the highest purchasable HR role</li>
@@ -193,15 +203,19 @@
                                   <li class="text-success">✔️ Get Admin</li>
                                   <li class="text-success">✔️ 2 steps to an SHR rank</li>
                                   <li class="disclaimer">For this rank, you must join the Discord Server.</li>
+                                  
                                 </ul>
                                 <hr>
                                 <p>Choose your <span class="accent">preferred</span> payment type:</p>
                                 <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="link('rblx', 'gamepass', '57269608', null, null)">Robux</button>
+                                
                                 <button type="button" class="btn btn-lg btn-block btn-primary" data-shoppy-product="p4Z3orG">USD</button> <br/>
                               </div>
                             </div>
                             </div>
+                    
       </div>
+
     </div>
   </section>
 
