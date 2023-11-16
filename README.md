@@ -1,2 +1,4 @@
-# Welcome to Bloxco.org
-Welcome to Bloxco.org, the official website for the Roblox game 'Bloxco Supermarket'. Play it now, join our communications server, and apply!
+# Welcome to bloxco.org's GitHub repo!
+Here, you'll find the source behind our site: https://bloxco.org. Check it out!
+
+* Several files are obfuscated to provide maximum security *
