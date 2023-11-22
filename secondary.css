@@ -12,6 +12,24 @@
     --hyra-pink: #FBCFE8;
     --hyra-green: #BBF7D0;
     --hyra-orange: #FED7AA;
+
+    /* discord*/
+    --saturation-factor: 1;
+    --brand-260-hsl: 235 calc(var(--saturation-factor, 1)*86.2%) 88.6%;
+    --brand-260: hsl(var(--brand-260-hsl)/1);
+    --brand-500-hsl: 235 calc(var(--saturation-factor, 1)*85.6%) 64.7%;
+    --mention-background: hsl(var(--brand-500-hsl)/0.3);
+    --mention-foreground: var(--brand-260);
+}
+
+/* discord mentions */
+.discord-mention {
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: 500;
+    unicode-bidi: plaintext;
+    color: var(--mention-foreground);
+    background-color: var(--mention-background);
 }
 
 /* HYRA BACKGROUND COLORS START */
