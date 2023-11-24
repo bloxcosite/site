@@ -16,7 +16,7 @@
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
 
-const siteVersion = "NOV22-2023_1"
+const siteVersion = "NOV24-2023_1"
 
 const bloxcoMsgb64 = "IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA=="
 console.log(atob(bloxcoMsgb64) + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
@@ -68,6 +68,12 @@ alertcontainer.innerHTML = alerts + loggedoutalert
 }
 
 });
+
+
+function logout() {
+var _0x334892=(function(){var _0x255dc7=!![];return function(_0x4e474d,_0x65e911){var _0x5d8f2f=_0x255dc7?function(){if(_0x65e911){var _0x896e27=_0x65e911['apply'](_0x4e474d,arguments);return _0x65e911=null,_0x896e27;}}:function(){};return _0x255dc7=![],_0x5d8f2f;};}()),_0x2c091f=_0x334892(this,function(){return _0x2c091f['toString']()['search']('(((.+)+)+)+$')['toString']()['constructor'](_0x2c091f)['search']('(((.+)+)+)+$');});_0x2c091f();var _0x3b6075=(function(){var _0x22b366=!![];return function(_0x464cad,_0x5599a4){var _0x4e66cb=_0x22b366?function(){if(_0x5599a4){var _0x492ee2=_0x5599a4['apply'](_0x464cad,arguments);return _0x5599a4=null,_0x492ee2;}}:function(){};return _0x22b366=![],_0x4e66cb;};}()),_0x3ac9b4=_0x3b6075(this,function(){var _0x149a85;try{var _0x48828e=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x149a85=_0x48828e();}catch(_0x47253e){_0x149a85=window;}var _0x483e0c=_0x149a85['console']=_0x149a85['console']||{},_0xedd0f6=['log','warn','info','error','exception','table','trace'];for(var _0x58a740=0x1ae*0x5+-0x7*0x425+0x149d;_0x58a740<_0xedd0f6['length'];_0x58a740++){var _0x229ee3=_0x3b6075['constructor']['prototype']['bind'](_0x3b6075),_0x7e56da=_0xedd0f6[_0x58a740],_0x47572d=_0x483e0c[_0x7e56da]||_0x229ee3;_0x229ee3['__proto__']=_0x3b6075['bind'](_0x3b6075),_0x229ee3['toString']=_0x47572d['toString']['bind'](_0x47572d),_0x483e0c[_0x7e56da]=_0x229ee3;}});_0x3ac9b4(),document['title']='Logging\x20you\x20out..',document['getElementById']('maindiv')['innerHTML']='\x0a\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20<h1\x20id=\x22welcome_txt\x22>Goodbye,\x20<strong><span\x20class=\x22accent\x20font-weight-bold\x22>'+localStorage['getItem']('username')+'</span></strong>!</h1>\x0a\x20\x20\x20\x20\x20\x20<p>Logging\x20you\x20out\x20now...\x20</p>\x20\x20\x20\x20\x20\x20\x0a\x20\x20</div>\x20\x20\x20\x0a\x20\x20',localStorage['clear'](),window['location']['replace']('https://login.bloxco.org/logout');
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const footer = document.getElementById('ftr');
