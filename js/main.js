@@ -1,3 +1,6 @@
+const maintenance = true
+
+
 /*
  _      _                                                  
 | |    | |                                                 
@@ -16,10 +19,9 @@
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
 
-const siteVersion = "NOV24-2023_1"
+const siteVersion = "NOV25-2023_1"
 
-const bloxcoMsgb64 = "IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA=="
-console.log(atob(bloxcoMsgb64) + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
+console.log(atob("IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA") + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
 
 document.addEventListener('DOMContentLoaded', function() {
   const alertcontainer = document.getElementById('alert-container');
@@ -71,80 +73,94 @@ alertcontainer.innerHTML = alerts + loggedoutalert
 
 
 function logout() {
-var _0x334892=(function(){var _0x255dc7=!![];return function(_0x4e474d,_0x65e911){var _0x5d8f2f=_0x255dc7?function(){if(_0x65e911){var _0x896e27=_0x65e911['apply'](_0x4e474d,arguments);return _0x65e911=null,_0x896e27;}}:function(){};return _0x255dc7=![],_0x5d8f2f;};}()),_0x2c091f=_0x334892(this,function(){return _0x2c091f['toString']()['search']('(((.+)+)+)+$')['toString']()['constructor'](_0x2c091f)['search']('(((.+)+)+)+$');});_0x2c091f();var _0x3b6075=(function(){var _0x22b366=!![];return function(_0x464cad,_0x5599a4){var _0x4e66cb=_0x22b366?function(){if(_0x5599a4){var _0x492ee2=_0x5599a4['apply'](_0x464cad,arguments);return _0x5599a4=null,_0x492ee2;}}:function(){};return _0x22b366=![],_0x4e66cb;};}()),_0x3ac9b4=_0x3b6075(this,function(){var _0x149a85;try{var _0x48828e=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x149a85=_0x48828e();}catch(_0x47253e){_0x149a85=window;}var _0x483e0c=_0x149a85['console']=_0x149a85['console']||{},_0xedd0f6=['log','warn','info','error','exception','table','trace'];for(var _0x58a740=0x1ae*0x5+-0x7*0x425+0x149d;_0x58a740<_0xedd0f6['length'];_0x58a740++){var _0x229ee3=_0x3b6075['constructor']['prototype']['bind'](_0x3b6075),_0x7e56da=_0xedd0f6[_0x58a740],_0x47572d=_0x483e0c[_0x7e56da]||_0x229ee3;_0x229ee3['__proto__']=_0x3b6075['bind'](_0x3b6075),_0x229ee3['toString']=_0x47572d['toString']['bind'](_0x47572d),_0x483e0c[_0x7e56da]=_0x229ee3;}});_0x3ac9b4(),document['title']='Logging\x20you\x20out..',document['getElementById']('maindiv')['innerHTML']='\x0a\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20<h1\x20id=\x22welcome_txt\x22>Goodbye,\x20<strong><span\x20class=\x22accent\x20font-weight-bold\x22>'+localStorage['getItem']('username')+'</span></strong>!</h1>\x0a\x20\x20\x20\x20\x20\x20<p>Logging\x20you\x20out\x20now...\x20</p>\x20\x20\x20\x20\x20\x20\x0a\x20\x20</div>\x20\x20\x20\x0a\x20\x20',localStorage['clear'](),window['location']['replace']('https://login.bloxco.org/logout');
+  document.title = "Logging you out.."
+  document.getElementById('maindiv').innerHTML = `
+  <div class="container">
+      <h1 id="welcome_txt">Goodbye, <strong><span class="accent font-weight-bold">${localStorage.getItem("username")}</span></strong>!</h1>
+      <p>Logging you out now... </p>      
+  </div>   
+  `
+  localStorage.clear()
+  window.location.replace("https://login.bloxco.org/logout");
 }
 
-
+/* DISPLAY HEADER */
 document.addEventListener('DOMContentLoaded', function() {
-  const footer = document.getElementById('ftr');
-  
-  const year = new Date().getFullYear();
-  const ftrContent = `
-    <br/>
-    <div class="container dark-mode">
-      <div class="row">
-        <h4>Contact</h4>
-        <p>Discord: <a href="https://discord.gg/bloxcosupermarket" target="_blank">discord.gg/bloxcosupermarket</a><br/>
-        Roblox: <a href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket" target="_blank">roblox.com/groups/6235775/</a></p>
-      </div>
-      <hr>
-      <p>&copy; ${year} Bloxco Supermarket. All rights reserved.</p>
-      <span class="disclaimer">This site was made by zertybee_5</span>
-      <p class="fs-6 text-start fw-lighter">Site version: ${siteVersion}</p>
-    </div>
-  `;
-
-  footer.innerHTML = ftrContent;
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const nav = document.getElementById('nav-maincontent');
-  const isShrPath = window.location.pathname.startsWith('/shr/');
-  const navContent = `
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="/">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="/ranks">Rank Purchase</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="/partners">Partners</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="/partner-req">Partnership Requirements</a>
-  </li>
-  <li class="nav-item dropdown important-links">
-    <a class="nav-link dropdown-toggle" style="color:#e4e4e4;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      Important Links
-    </a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item " href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" target="_blank"><strong>Play</strong> the Game</a></li>
-      <li><a class="dropdown-item" href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket#!/about" target="_blank"><strong>Join</strong> our Group</a></li>
-      <li><a class="dropdown-item" href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5" target="_blank"><strong>Discord Server</strong></a></li>
-      <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Fwww.tiktok.com%2F%40bloxcosocials&sa=D&sntz=1&usg=AOvVaw3UkVZebmGMHrey-aJnuPT8" target="_blank">TikTok</a></li>
-      <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2Fbloxco_socials%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw24aap0fvGWbeUwKKhDGaJv" target="_blank">Instagram</a></li>
-      <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2FBloxcoSocials&sa=D&sntz=1&usg=AOvVaw2m7nE1lR4qeN_NRLM472uc" target="_blank">Twitter</a></li>
-      <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCo1tVFeDsp7BUd8kNhbgMnQ" target="_blank">YouTube</a></li>
-      <li><a class="dropdown-item" href="/events" target="_blank">Event Calendar</a></li>
-    </ul>
-  </li>
-    </ul>
-  `;
-  nav.innerHTML = navContent;
-  if (isShrPath) {
-  const addOn = `
-  <button onclick="logout()" type="button" class="btn btn-danger" id="nav-logout">Log out</button>
-  `
-  document.getElementById('nav-addon').innerHTML = addOn
+  if(!maintenance) {
+    const nav = document.getElementById('nav-maincontent');
+    const isShrPath = window.location.pathname.startsWith('/shr/');
+    const navContent = `
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/ranks">Rank Purchase</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/partners">Partners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/partner-req">Partnership Requirements</a>
+    </li>
+    <li class="nav-item dropdown important-links">
+      <a class="nav-link dropdown-toggle" style="color:#e4e4e4;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Important Links
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item " href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" target="_blank"><strong>Play</strong> the Game</a></li>
+        <li><a class="dropdown-item" href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket#!/about" target="_blank"><strong>Join</strong> our Group</a></li>
+        <li><a class="dropdown-item" href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5" target="_blank"><strong>Discord Server</strong></a></li>
+        <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Fwww.tiktok.com%2F%40bloxcosocials&sa=D&sntz=1&usg=AOvVaw3UkVZebmGMHrey-aJnuPT8" target="_blank">TikTok</a></li>
+        <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Finstagram.com%2Fbloxco_socials%3Figshid%3DYmMyMTA2M2Y%3D&sa=D&sntz=1&usg=AOvVaw24aap0fvGWbeUwKKhDGaJv" target="_blank">Instagram</a></li>
+        <li><a class="dropdown-item" href="https://www.google.com/url?q=https%3A%2F%2Ftwitter.com%2FBloxcoSocials&sa=D&sntz=1&usg=AOvVaw2m7nE1lR4qeN_NRLM472uc" target="_blank">Twitter</a></li>
+        <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCo1tVFeDsp7BUd8kNhbgMnQ" target="_blank">YouTube</a></li>
+        <li><a class="dropdown-item" href="/events" target="_blank">Event Calendar</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="/christmas">🎄Christmas Countdown</a>
+    </li>
+      </ul>
+    `;
+    nav.innerHTML = navContent;
+    if (isShrPath) {
+    const addOn = `
+    <button onclick="logout()" type="button" class="btn btn-danger" id="nav-logout">Log out</button>
+    `
+    document.getElementById('nav-addon').innerHTML = addOn
+    }
   }
-
 });
+
+/* DISPLAY FOOTER */
+document.addEventListener('DOMContentLoaded', function() {
+  if(!maintenance) {
+    const footer = document.getElementById('ftr');
+    const year = new Date().getFullYear();
+    const ftrContent = `
+      <br/>
+      <div class="container dark-mode">
+        <div class="row">
+          <h4>Contact</h4>
+          <p>Discord: <a href="https://discord.gg/bloxcosupermarket" target="_blank">discord.gg/bloxcosupermarket</a><br/>
+          Roblox: <a href="https://www.roblox.com/groups/6235775/Bloxco-Supermarket" target="_blank">roblox.com/groups/6235775/</a></p>
+        </div>
+        <hr>
+        <p>&copy; ${year} Bloxco Supermarket. All rights reserved.</p>
+        <span class="disclaimer">This site was made by zertybee_5</span>
+        <p class="fs-6 text-start fw-lighter">Site version: ${siteVersion}</p>
+      </div>
+    `;
+
+    footer.innerHTML = ftrContent;
+  }
+});
+
 
 /* LINK FUNCTION, OPEN A PLATFORM LINK BY USING THE PROVIDED PARAMETERS */
-
 function link(platform, linktype, extension, extension2, extension3) {
-  let url = "https://bloxco.org/error.html?c=F001"
+  let url = "https://bloxco.org/404.html"
 
   if (platform == 'rblx') {
    if (linktype == 'gamepass') {
@@ -167,22 +183,58 @@ function link(platform, linktype, extension, extension2, extension3) {
   window.open(url,'_blank');
 }
 
-const maintenance = false
+const urlParams = new URLSearchParams(window.location.search);
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  var pageTitle = "Bloxco Supermarket";
+  var pageName = location.pathname.toLowerCase().replace(/\.html$/, '');
+  if (pageName.includes("shr")) {
+    pageTitle = "SHR";
+  } else if (pageName == "/index") {
+    pageTitle = "Home";
+  } else if (pageName == "/ranks") {
+    pageTitle = "Rank Purchase";
+  } else if (pageName == "/christmas") {
+    pageTitle = "Christmas Countdown";
+  } else if (pageName == "/events") {
+    pageTitle = "Events";
+  } else if (pageName == "/partner-req") {
+    pageTitle = "Partnership Requirements";
+  } else if (pageName == "/partners") {
+    pageTitle = "Partnerships";
+  } else if (pageName == "/referrals") {
+    pageTitle = "Referrals";
+  }
+
+
+  if (pageTitle == "Bloxco Supermarket") {
+    console.warn('[TITLE]: No title provided')
+  } else {
+    document.title = pageTitle + " - Bloxco Supermarket";
+  }
+});
+
+/* MAINTENANCE */
 if (maintenance) {
-  document.getElementById('s1').innerHTML = `
-      <br/>
-      <div style="margin-left:100px;">
-              <h2>🔨Whoops! We're currently on <span class="text-danger">maintenance</span>😓</h2>
-                <p>We're currently experiencing technical difficulties, and have put our website in Maintenance mode. We're sorry.<br/>
-               For now, you're more than welcome to
-               <div>
-                <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" class="btn btn-primary text-light" style="color: white !important;">Play our Game</a>
-                or
-                <a href="https://discord.gg/bloxcosupermarket" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
-              </p>
+  document.title = "🔨 - Bloxco Supermarket"
+  document.body.innerHTML = `
+  <nav class="navbar navbar-expand-lg text-light dark-mode" style="margin-bottom: 10px;" id="navbar"></nav>
+  <div style="margin-left:100px;">
+    <h2>🔨Whoops! We're currently on <span class="text-danger">maintenance</span> mode😓</h2>
+    <p>We're making things more <span style="font-family: 'Times New Roman', serif; font-style: italic;">awesome</span>. Be back soon. 😉
+    <br>For now, you're more than welcome to
+    </p>
+    <div>
+      <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" class="btn btn-primary text-light" style="color: white !important;">Play our Game</a>
+      or
+      <a href="discord.html" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
+    </div>
+  </div>
   `
-
+  if (document.getElementById('s1')) {
+    document.getElementById('s2').innerHTML = ""
+  }
   if (document.getElementById('s2')) {
     document.getElementById('s2').innerHTML = ""
   }
@@ -192,37 +244,7 @@ if (maintenance) {
   if (document.getElementById('s4')) {
     document.getElementById('s4').innerHTML = ""
   }
-
-}
-
-const urlParams = new URLSearchParams(window.location.search);
-const spiderprm = urlParams.get('version');
-
-if (spiderprm) {
-  console.warn('spidey')
-
-  document.getElementById('s1').innerHTML = `
-  <br/>
-  <img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
-`
-
-if (document.getElementById('s2')) {
-document.getElementById('s2').innerHTML = `
-<br/>
-<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
-`
-}
-if (document.getElementById('s3')) {
-document.getElementById('s3').innerHTML = `
-<br/>
-<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
-`
-}
-if (document.getElementById('s4')) {
-document.getElementById('s4').innerHTML = `
-<br/>
-<img src="https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-03/HGIC_spiders_wolfspider_16x9.jpg?itok=FpCjS4Qz"/>
-`
-}
-
+  if (document.getElementById('ftr')) {
+    document.getElementById('ftr').innerHTML = ""
+  }
 }
