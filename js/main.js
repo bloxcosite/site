@@ -1,6 +1,3 @@
-const maintenance = true
-
-
 /*
  _      _                                                  
 | |    | |                                                 
@@ -20,6 +17,7 @@ const maintenance = true
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
 
 const siteVersion = "NOV25-2023_1"
+const _MAINTENANCE = true
 
 console.log(atob("IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA") + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
 
@@ -57,7 +55,6 @@ and vote using /hrotm! You have <strong><span id="hrotmcountdown">loading time..
 
   alertcontainer.innerHTML = alerts;
 
-
 if (urlParams.get('loggedout') == "true") {
   const loggedoutalert = `<div class="alert alert-success" style="display: block !important;">
   <strong>
@@ -86,7 +83,8 @@ function logout() {
 
 /* DISPLAY HEADER */
 document.addEventListener('DOMContentLoaded', function() {
-  if(!maintenance) {
+
+  function loadNav() {
     const nav = document.getElementById('nav-maincontent');
     const isShrPath = window.location.pathname.startsWith('/shr/');
     const navContent = `
@@ -129,13 +127,20 @@ document.addEventListener('DOMContentLoaded', function() {
     <button onclick="logout()" type="button" class="btn btn-danger" id="nav-logout">Log out</button>
     `
     document.getElementById('nav-addon').innerHTML = addOn
-    }
+  }
+  }
+
+  if(!_MAINTENANCE) {
+    loadNav()
+  }
+  if (localStorage.getItem('developer')) {
+    loadNav()
   }
 });
 
 /* DISPLAY FOOTER */
 document.addEventListener('DOMContentLoaded', function() {
-  if(!maintenance) {
+  function loadFtr() {
     const footer = document.getElementById('ftr');
     const year = new Date().getFullYear();
     const ftrContent = `
@@ -155,6 +160,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     footer.innerHTML = ftrContent;
   }
+  if(!_MAINTENANCE) {
+    loadFtr()
+  }
+  if (localStorage.getItem('developer')) {
+    loadFtr()
+  }
+
 });
 
 
@@ -216,35 +228,37 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* MAINTENANCE */
-if (maintenance) {
-  document.title = "🔨 - Bloxco Supermarket"
-  document.body.innerHTML = `
-  <nav class="navbar navbar-expand-lg text-light dark-mode" style="margin-bottom: 10px;" id="navbar"></nav>
-  <div style="margin-left:100px;">
-    <h2>🔨Whoops! We're currently on <span class="text-danger">maintenance</span> mode😓</h2>
-    <p>We're making things more <span style="font-family: 'Times New Roman', serif; font-style: italic;">awesome</span>. Be back soon. 😉
-    <br>For now, you're more than welcome to
-    </p>
-    <div>
-      <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" class="btn btn-primary text-light" style="color: white !important;">Play our Game</a>
-      or
-      <a href="discord.html" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
+if (_MAINTENANCE) {
+  if (!localStorage.getItem('developer')) { 
+    document.title = "🔨 - Bloxco Supermarket"
+    document.body.innerHTML = `
+    <nav class="navbar navbar-expand-lg text-light dark-mode" style="margin-bottom: 10px;" id="navbar"></nav>
+    <div style="margin-left:100px;">
+      <h2>🔨Whoops! We're currently on <span class="text-danger">maintenance</span> mode😓</h2>
+      <p>We're making things more <span style="font-family: 'Times New Roman', serif; font-style: italic;">awesome</span>. Be back soon. 😉
+      <br>For now, you're more than welcome to
+      </p>
+      <div>
+        <a href="https://www.roblox.com/games/9901611189/Bloxco-Supermarket" class="btn btn-primary text-light" style="color: white !important;">Play our Game</a>
+        or
+        <a href="discord.html" class="btn btn-secondary text-white" style="color: white !important;">Join our Discord Server</a>
+      </div>
     </div>
-  </div>
-  `
-  if (document.getElementById('s1')) {
-    document.getElementById('s2').innerHTML = ""
-  }
-  if (document.getElementById('s2')) {
-    document.getElementById('s2').innerHTML = ""
-  }
-  if (document.getElementById('s3')) {
-    document.getElementById('s3').innerHTML = ""
-  }
-  if (document.getElementById('s4')) {
-    document.getElementById('s4').innerHTML = ""
-  }
-  if (document.getElementById('ftr')) {
-    document.getElementById('ftr').innerHTML = ""
+    `
+    if (document.getElementById('s1')) {
+      document.getElementById('s2').innerHTML = ""
+    }
+    if (document.getElementById('s2')) {
+      document.getElementById('s2').innerHTML = ""
+    }
+    if (document.getElementById('s3')) {
+      document.getElementById('s3').innerHTML = ""
+    }
+    if (document.getElementById('s4')) {
+      document.getElementById('s4').innerHTML = ""
+    }
+    if (document.getElementById('ftr')) {
+      document.getElementById('ftr').innerHTML = ""
+    }
   }
 }
