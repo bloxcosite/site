@@ -1,4 +1,5 @@
 /* https://www.roblox.com/games/start?placeId=9901611189&launchData= */
+const urlParams = new URLSearchParams(window.location.search);
 const referralCode = urlParams.get('ref')
 
 if (referralCode) {
