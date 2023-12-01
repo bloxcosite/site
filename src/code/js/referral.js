@@ -6,6 +6,8 @@ if (referralCode) {
     window.location.replace(
         joinurl,
       ); */
+      setTimeout(() => {
+
     const inactive_alert = `
     <div class="alert alert-danger" style="display: block !important;">
     <strong>
@@ -14,5 +16,8 @@ if (referralCode) {
    Uh-oh! It seems like referral codes have been disabled. We're sorry!
   </div>
     `
-    document.getElementById('alert-container').innerHTML = document.getElementById('alert-container').innerHTML + inactive_alert
+    document.getElementById('alert-container').innerHTML = document.getElementById('alert-container').innerHTML + inactive_alert;
+    console.warn('[Referrals]: User tried to use a code, but failed. Alert displayed')
+  }, "500");
+
 }
