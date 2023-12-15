@@ -22,19 +22,6 @@ const _BASEURL = "https://bloxco.org"
     localStorage.clear()
     window.location.replace(`${_BASEURL}/shr/adminlog.html`);
 }
-if (localStorage.getItem("AwrMQyzkMJr") === null || localStorage.getItem("AwrMQyzKMjz") === null || localStorage.getItem("AwrMOYZkMJq") === null || localStorage.getItem("AmrMQYZkMJb") === null) {
-    unauthorized()
-} else {
-    if (localStorage.getItem("ArwMQYzKMJa") === null || localStorage.getItem("AwrMQYzKMJe") === null) {
-        unauthorized() 
-    } else {
-        /* all params found, need to check if valid now */
-        if (localStorage.getItem("AwrMQyzkMJr") === localStorage.getItem("AwrMQyzKMjz") && localStorage.getItem("AmrMQYZkMJb") == localStorage.getItem("AwrMOYZkMJq") && localStorage.getItem("AmrMQYZkMJb") === "oLpqYfXpz8FQnN67GMl9rg0NfrHYQ64r") {
-            authorized()
-        } else {
-            unauthorized()    
-        }
-    }
-}
+authorized()
 
   </script>
