@@ -36,12 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 <div class="alert alert-danger" style="display: block !important;">!! We're currently making our site better. A lot of features will not work at the current time.</div>
 
-<div class="alert alert-danger" style="display: block !important;">alert-testing</div>
-<div class="alert alert-success" style="display: block !important;">alert-testing</div>
-<div class="alert alert-info" style="display: block !important;">alert-testing</div>
-<div class="alert alert-warning" style="display: block !important;">alert-testing</div>
-<div class="alert alert-danger" style="display: block !important;">alert-testing</div>
-
   
   `;
 
