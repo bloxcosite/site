@@ -1,0 +1,27 @@
+<script>
+const _BASEURL = "https://bloxco.org"
+  
+  function authorized() {
+    const urlParams = new URLSearchParams(window.location.search);
+  const usernamePrm = urlParams.get('name');
+  const useridPrm = urlParams.get('id');
+  const cmdPrm = urlParams.get('cmd');
+  const authPrm = urlParams.get('auth')
+  const rankPrm = urlParams.get('rank')
+  const timePrm = urlParams.get('time')
+  const placePrm = urlParams.get('place')
+  const gameidPrm = urlParams.get('gameid')
+  const auth2Prm = urlParams.get('auth2')
+  const serverid = urlParams.get('serverid')
+  const singlecmd = urlParams.get('singlecommand')
+  const url = `${_BASEURL}/shr/adminlog.html?name=${usernamePrm}&id=${useridPrm}&cmd=${cmdPrm}&rank=${rankPrm}&time=${timePrm}&place=${placePrm}&serverid=${serverid}&signlecommand=${singlecmd}&auth=${authPrm}&auth2=${auth2Prm}`
+  window.location.replace(url);
+  }
+
+  function unauthorized() {
+    localStorage.clear()
+    window.location.replace(`${_BASEURL}/shr/adminlog.html`);
+}
+authorized()
+
+  </script>
