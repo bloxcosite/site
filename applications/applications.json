@@ -18,7 +18,7 @@
       },
       {
         "showCard": true,
-        "url": "/applications/pr.html",
+        "url": "/applications/pr",
         "enabled": true,
         "name_title": "Public Relations",
         "name_desc": "a PR member",
