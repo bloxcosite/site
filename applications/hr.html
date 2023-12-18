@@ -137,6 +137,47 @@
         //script3 - _DEVELOPER/apps.hr.script3.js
         setTimeout((() => { if ("true" === localStorage.getItem("appisenabled")) { const e = document.getElementById("areustaffyes"), t = document.getElementById("q-whatrankisuserquestion"); function n() { t.style.display = e.checked ? "block" : "none", checkRequiredFields() } e.addEventListener("change", n), document.getElementById("areustaffno").addEventListener("change", n) } }), 100);
       </script>
+      <script>
+        setTimeout(() => {
+            if (localStorage.getItem('appisenabled') === "true") {
+                function handleInputChange(inputId) {
+                    const inputElement = document.getElementById(inputId);
+
+                    if (inputElement) {
+                        inputElement.addEventListener('input', function () {
+                            localStorage.setItem(inputId, inputElement.value);
+                            console.warn('set ' + inputId + ' to ' + inputElement.value);
+                        });
+                    }
+                }
+
+                handleInputChange('discordtag');
+                handleInputChange('robloxuser');
+
+                const discordTagInput = document.getElementById('discordtag');
+                    const robloxUserInput = document.getElementById('robloxuser');
+
+                    if (discordTagInput) {
+                        console.warn('element discord exist')
+                        const storedDiscordTag = localStorage.getItem('discordtag');
+                        if (storedDiscordTag) {
+                            discordTagInput.value = storedDiscordTag;
+                            console.warn('element discord exist & value was changed')
+                        }
+                    }
+
+                    if (robloxUserInput) {
+                        console.warn('element roblox exist')
+                        const storedRobloxUser = localStorage.getItem('robloxuser');
+                        if (storedRobloxUser) {
+                            robloxUserInput.value = storedRobloxUser;
+                            console.warn('element roblox exist & changed')
+                        }
+                    }
+
+            }
+        }, 100);
+    </script>
   </section>
   <br /><br /><br /><br /><br />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

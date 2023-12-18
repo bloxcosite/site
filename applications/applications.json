@@ -17,6 +17,14 @@
         "purchasable": false
       },
       {
+        "showCard": true,
+        "url": "/applications/pr.html",
+        "enabled": true,
+        "name_title": "Public Relations",
+        "name_desc": "a PR member",
+        "purchasable": false
+      },
+      {
         "showCard": false,
         "url": "/applications/ah",
         "enabled": true,
