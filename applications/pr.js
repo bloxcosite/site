@@ -122,7 +122,6 @@ function loadapp() {
     <span style="font-size: small; font-weight: 300;">Don't have one? Put some images on a google doc, share it, and send the url here.</span></label>
   <br />
   <input name="entry.338603865" id="pastworkprovide" class="form-control">
-  <hr />
 </div>
 <!-- Question portfolio? -->
 
