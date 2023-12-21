@@ -52,15 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
   alertcontainer.innerHTML = alerts + loggedoutalert
   }
 
- if (urlParams.get('cool') == "true") {
-    const coolnessalert = `<div class="alert alert-success" style="display: block !important;">
-    <strong>
-     coolie woolie
-  </div>
-  </section>`
-  alertcontainer.innerHTML = alerts + coolnessalert
-  }
-
 });
 
 
