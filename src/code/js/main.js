@@ -16,7 +16,7 @@
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
 
-const siteVersion = "DECEMBER 21ST V0.1"
+const siteVersion = "DECEMBER 21ST V0.1.5"
 const _MAINTENANCE = false
 
 console.log(atob("IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA") + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
@@ -86,13 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
     </li>
     <li class="nav-item">
       <a class="nav-link" aria-current="page" href="/partner-req">Partnership Requirements</a>
-      
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="/referrals">Referrals</a>
-  </li>
+
     <li class="nav-item dropdown important-links">
-      <a class="nav-link dropdown-toggle" style="color:#e4e4e4;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         Important Links
       </a>
       <ul class="dropdown-menu">
@@ -144,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <hr>
         <p>&copy; ${year} Bloxco Supermarket. All rights reserved.</p>
         <span class="disclaimer">This site was made by zertybee_5</span>
-        <p class="fs-6 text-start fw-lighter">Site version: ${siteVersion}</p>
+        <p class="fs-6 text-start fw-lighter">Site version: <span class="lowercase">${siteVersion}</span></p>
       </div>
     `;
 
