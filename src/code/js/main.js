@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="http://www.google.com/url?q=http%3A%2F%2Fdiscord.gg%2FbPQMeZA4PW&sa=D&sntz=1&usg=AOvVaw37-CqJKaqRmebJ85BslNR5">Discord</a>, 
   and make new friends!
 </div>
-<div class="alert alert-danger" style="display: block !important;">!! We're currently making our site better. A lot of features will not work at the current time.</div>
+<!-- <div class="alert alert-danger" style="display: block !important;">!! We're currently making our site better. A lot of features will not work at the current time.</div> -->
 
   
   `;
@@ -64,7 +64,7 @@ function logout() {
   </div>   
   `
   localStorage.clear()
-  window.location.replace("https://login.bloxco.org/logout");
+  window.location.replace("https://auth.bloxco.org/logout");
 }
 
 /* DISPLAY HEADER */
@@ -101,9 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCo1tVFeDsp7BUd8kNhbgMnQ" target="_blank">YouTube</a></li>
         <li><a class="dropdown-item" href="/events" target="_blank">Event Calendar</a></li>
       </ul>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link professional" aria-current="page" href="/christmas">🎄Christmas Countdown</a>
     </li>
       </ul>
     `;
