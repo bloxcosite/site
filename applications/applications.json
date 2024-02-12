@@ -1,0 +1,45 @@
+{
+    "applications": [
+      {
+        "showCard": true,
+        "url": "/applications/hr",
+        "enabled": false,
+        "name_title": "High Rank",
+        "name_desc": "a High Rank",
+        "purchasable": true
+      },
+      {
+        "showCard": true,
+        "url": "/applications/dev",
+        "enabled": true,
+        "name_title": "Developer",
+        "name_desc": "a Developer",
+        "purchasable": false
+      },
+      {
+        "showCard": true,
+        "url": "/applications/pr",
+        "enabled": true,
+        "name_title": "Public Relations",
+        "name_desc": "a PR member",
+        "purchasable": false
+      },
+      {
+        "showCard": false,
+        "url": "/applications/ah",
+        "enabled": true,
+        "name_title": "-TEST1-DISABLED-TITLE-PURCHASABALE",
+        "name_desc": "-TEST",
+        "purchasable": false
+      },
+      {
+        "showCard": false,
+        "url": "/applications/ee",
+        "enabled": false,
+        "name_title": "-TEST1-ENABLED-TITLE",
+        "name_desc": "-TEST1-ENABLED-DESC",
+        "purchasable": true
+      }
+    ]
+  }
+  
