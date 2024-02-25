@@ -26,7 +26,6 @@ function addCardsToPageSHR(data) {
   data.forEach((member) => {
     let cardHtmlShr = fillCardTemplateShr(member);
     loadAppShr.innerHTML += cardHtmlShr;
-    colorIndex++;
   });
 }
 
