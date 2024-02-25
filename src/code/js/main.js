@@ -16,7 +16,7 @@
 /* Created (DD-MM-YYYY @ HH:MM): 08-07-2023 @ 18:48CEST */
 /* Use: This is the main file JavaScript, which is loaded onto all pages in the site. It contains all the necessary stuff. */
 
-const siteVersion = "DECEMBER 21ST V0.1.5"
+const siteVersion = "v2.3.2"
 const _MAINTENANCE = false
 
 console.log(atob("IF8gICAgICBfICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8ICAgIHwgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKfCB8X18gIHwgfCAgX19fICBfXyAgX18gIF9fXyAgIF9fXyAgICAgICBfX18gICBfIF9fICAgX18gXyAKfCAnXyBcIHwgfCAvIF8gXCBcIFwvIC8gLyBfX3wgLyBfIFwgICAgIC8gXyBcIHwgJ19ffCAvIF9gIHwKfCB8XykgfHwgfHwgKF8pIHwgPiAgPCB8IChfXyB8IChfKSB8IF8gfCAoXykgfHwgfCAgIHwgKF98IHwKfF8uX18vIHxffCBcX19fLyAvXy9cX1wgXF9fX3wgXF9fXy8gKF8pIFxfX18vIHxffCAgICBcX18sIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18vIHwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8X19fLyAKICAgICAgICAgICAgICAgICAgICBibG94Y28ub3JnICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBERVZFTE9QRVIgQ09OU09MRSAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgIGJ5IHplcnR5YmVlXzUgICAgICAgICAgICAgICAgICAgICAgIA") + "\n-------------\nWelcome to bloxco.org! Looking for bugs? Thanks! Please report all found bugs to zertybee on Discord.")
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (urlParams.get('loggedout') == "true") {
     const loggedoutalert = `<div class="alert alert-success" style="display: block !important;">
     <strong>
-      <img src="https://icons.veryicon.com/png/o/miscellaneous/batch-editor/success-38.png" height="25" style="filter: brightness(0)" draggable="false"></img>
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/batch-editor/success-38.png" height="25" style="filter: brightness(100)" draggable="false"></img>
       Success</strong>:
     You've been succesfully logged out.
   </div>
