@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (urlParams.get('loggedout') == "true") {
     const loggedoutalert = `<div class="alert alert-success" style="display: block !important;">
     <strong>
-      <img src="https://icons.veryicon.com/png/o/miscellaneous/batch-editor/success-38.png" height="25" style="filter: brightness(0)" draggable="false"></img>
+      <img src="https://icons.veryicon.com/png/o/miscellaneous/batch-editor/success-38.png" height="25" style="filter: brightness(100)" draggable="false"></img>
       Success</strong>:
     You've been succesfully logged out.
   </div>
