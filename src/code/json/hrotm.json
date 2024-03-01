@@ -1,11 +1,19 @@
 [
     {
+      "username": "HROTM Paused",
+      "aka": "Paused",
+      "userid": "paused",
+      "rank": "<span class='placeholder'>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>",
+      "desc_html": "We have decided to pause our HROTM system until we have more HRs. <a href='https://bloxco.org/applications/hr'>Apply today!</a>'",
+      "current": false
+    },
+    {
       "username": "Pikachu2010thebest",
       "aka": "TheProCut",
       "userid": "1466581082",
       "rank": "General Manager",
       "desc_html": "Pikachu2010thebest was voted to become the High Rank of November 2023🍂",
-      "current": true
+      "current": false
     },
     {
       "username": "Lego_fan43216",
@@ -20,7 +28,7 @@
       "aka": "Wild",
       "userid": "4119060167",
       "rank": "Development Intern",
-      "desc_html": "Wild_Heart654 was voted to become the firs High Rank of the month ever in September 2023🏫",
+      "desc_html": "Wild_Heart654 was voted to become the first High Rank of the month ever in September 2023🏫",
       "current": false
     }
   ]
