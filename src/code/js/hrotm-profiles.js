@@ -12,7 +12,32 @@ const cardTemplateHROTM = `
 </div>
 `;
 
+const cardpaused = `
+<div class="col mb-4">
+<div class="profilecard card dark-mode" {{previousClass}}>
+  <img id="shrProfilePic" loading="lazy" src="https://bloxco.org/src/media/graphics/ProfilePictures/{{userId}}.png" class="{{previousClass}} card-img-top pfp mx-auto d-block {{bgClass}}" alt="{{username}}'s avatar" {{previousImgStyle}}>
+  <div class="card-body">
+    <h5 class="card-title {{previousClass}}">{{username}} <span class="aka">({{aka}})</span></h5>
+    <h6 class="card-title text-secondary {{previousClass}}">{{rank}}</h6>
+    <p class="card-text {{previousClass}}">{{desc_html}}
+    </p>
+  </div>
+</div>
+</div>
+`;
+
 function fillCardTemplate(member, bgClass, isCurrent) {
+  if (member.aka == 'Paused') {
+      return cardpaused
+    .replace(/{{username}}/g, member.username)
+    .replace(/{{aka}}/g, member.aka)
+    .replace(/{{userId}}/g, member.userid)
+    .replace(/{{rank}}/g, member.rank)
+    .replace(/{{desc_html}}/g, member.desc_html)
+    .replace(/{{previousClass}}/g, isCurrent ? '' : 'previous-hrotm')
+    .replace(/{{previousImgStyle}}/g, isCurrent ? '' : 'style="background-color: #1F1F1F !important;"')
+    .replace(/{{bgClass}}/g, bgClass);
+  } else {
   return cardTemplateHROTM
     .replace(/{{username}}/g, member.username)
     .replace(/{{aka}}/g, member.aka)
@@ -22,7 +47,7 @@ function fillCardTemplate(member, bgClass, isCurrent) {
     .replace(/{{previousClass}}/g, isCurrent ? '' : 'previous-hrotm')
     .replace(/{{previousImgStyle}}/g, isCurrent ? '' : 'style="background-color: #1F1F1F !important;"')
     .replace(/{{bgClass}}/g, bgClass);
-}
+}}
 
 function addCardsToPage(data) {
   const loadApp = document.getElementById('loadAppHROTM');
