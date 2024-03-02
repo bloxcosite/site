@@ -38,5 +38,4 @@ function fetchDataShr() {
 
 window.addEventListener('load', function () {
   fetchDataShr();
-  fetchData();
 });
