@@ -19,7 +19,7 @@
       {
         "showCard": true,
         "url": "/applications/pr",
-        "enabled": true,
+        "enabled": false,
         "name_title": "Public Relations",
         "name_desc": "a PR member",
         "purchasable": false
