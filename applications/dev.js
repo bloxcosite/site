@@ -1,6 +1,6 @@
 var unId = (Math.random() * 10).toString(36).replace('.', '')
 
-function loadapp() {
+/*function loadapp() {
     document.getElementById('mainForm').innerHTML = `
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6qoIJB7h5Ei6SV3l9mN3ycq1Bo6VlIARK34nEFWfqjq3ufA/formResponse" method="post" target="sucessMessage" onsubmit="submitted = true">
 
@@ -185,4 +185,9 @@ function loadapp() {
       class="text-danger" id="error-submit"></span>
   </form>
 `
-  } 
+  } */
+
+function loadapp() {
+    document.getElementById('mainForm').innerHTML = `    <h4>Apply through our <span class="accent">Discord Server</span>.
+</h4><p><a href="../discord">Open a ticket</a> and send us your past work, and why you would like to develop for Bloxco.</p>`
+}
