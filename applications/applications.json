@@ -3,7 +3,7 @@
       {
         "showCard": true,
         "url": "/applications/hr",
-        "enabled": true,
+        "enabled": false,
         "name_title": "High Rank",
         "name_desc": "a High Rank",
         "purchasable": true
