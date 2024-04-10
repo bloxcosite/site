@@ -1,7 +1,7 @@
 let cardTemplateSHR = `
   <div class="col mb-4">
     <div class="profilecard card dark-mode">
-      <img loading="lazy" id="shrProfilePic" src=" https://avatar.theprocut.co.uk/{{userId}}.png" class="card-img-top pfp mx-auto d-block" alt="{{username}}'s avatar" onclick="window.open('https://www.roblox.com/users/{{userId}}/profile','_blank');">
+      <img id="shrProfilePic" src="https://avatar.theprocut.co.uk/{{userId}}.png" class="card-img-top pfp mx-auto d-block" alt="{{username}}'s avatar" onclick="window.open('https://www.roblox.com/users/{{userId}}/profile','_blank');">
       <div class="card-body">
         <h5 class="card-title">{{username}} <span class="aka">({{aka}})</span></h5>
         <h6 class="card-title text-secondary">{{rank}}</h6>
