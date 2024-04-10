@@ -7,18 +7,18 @@
       "desc_html": "<div style='width:100%;height:0;padding-bottom:56%;position:relative;'><iframe src='https://giphy.com/embed/tIEU1EcLjegz9ZCi2F' width='100%' height='100%' style='position:absolute' frameBorder='0' class='giphy-embed' allowFullScreen></iframe></div></p><i style='color:grey;'>'Slay what you need to slay'</i> - nana9393"
     },
     {
-      "username": "dogs80",
-      "aka": "dogs",
-      "rank": "Chief Executive Officer",
-      "userid": "36633595",
-      "desc_html": "<i>\"If you can dream it, you can do it\"</i> - dogs80"
-    },
-    {
       "username": "zertybee_5",
       "aka": "zer",
       "userid": "1521420392",
-      "rank": "CEO <span style=\"font-size: 12px\">(Head of Development)</span>",
-      "desc_html": "Heya! I'm zertybee, but most people call me <i>zer</i>. I started my career in Bloxco around early October 2022, when I bought the Senior Store Colleague rank. I love programming, themeparks, and gaming. I also love playing with my dogs! They never get tired! I like to eat pancakes, they're just sooo delicious😋! I became an SHR at Bloxco at around late June 2023. By the way, thanks for checking this site out! I really did my best to make it nice."
+      "rank": "CEO",
+      "desc_html": "Heya! I'm zertybee, but most people call me <i>zer</i>. I started my career in Bloxco around early October 2022, when I bought the Senior Store Colleague rank. I love programming, themeparks, and gaming. I also love playing with my dogs! They never get tired! I like to eat pancakes, they're just sooo delicious😋! I became an SHR at Bloxco at around late June 2023. By the way, thanks for checking this site out! I really did my best to make it nice. <span style=\"font-size:10px;\">(dogs finally left)</span>"
+    },
+    {
+      "username": "laur5pesto1",
+      "aka": "laura",
+      "userid": "2843777383",
+      "rank": "CEO",
+      "desc_html": "Hi I'm Laura! I started at Bloxco in May 2022. I'm a music gal and no ne can tell me Morgan Whallen is better than the music I listen to cough Nathan <i>cough</i>. <span style=\"font-size:11px;\">P.S Zer didn't let me cook 😢</span>"
     },
     {
       "username": "ambercat_3000",
@@ -34,6 +34,13 @@
       "rank": "Chief Operations Officer",
       "desc_html": "Hi, I'm koloseum3, but I'm more often called <i>Kolo</i> or <i>Mr_Octopus</i>. I started my adventure in Bloxco at the beginning of May 2023, when I passed the HR application. I love swimming and being outdoors for a long time - it relaxes me a lot. I also love spending time with my parrots and dog! I became SHR in the middle of July 2023. Have a good day!"
     },
+        {
+      "username": "Pikachu2010thebest",
+      "aka": "TheProCut",
+      "userid": "1466581082",
+      "rank": "Head Of Development",
+      "desc_html": "terabyte premium. yellow? food< Building) avatar, Magenta?"
+    },
     {
       "username": "CrunchyChip7465",
       "aka": "Chip",
@@ -47,13 +54,13 @@
       "userid": "214682973",
       "rank": "Junior Corporate",
       "desc_html": "Hiya, my name is Anayah! I have been in bloxco for a while now since around last year July. I am a kind, respectful, responsible, reliable, loyal person and I try make everybody have a good time, where ever they are. I will do whatever it takes to make the Bloxco community a better place. My hobbies are kickboxing, netball and basketball. I am a black belt in kickboxing and I play GK in netball. I have done kickboxing for over 9 years."
-    },
+    }
         {
-      "username": "laur5pesto1",
-      "aka": "laura",
-      "userid": "2843777383",
-      "rank": "Junior Corporate",
-      "desc_html": "Hi I'm Laura! I started at Bloxco in May 2022. I'm a music gal and no ne can tell me Morgan Whallen is better than the music I listen to cough Nathan <i>cough</i>. <span style=\"font-size:10px;\">P.S Zer didn't let me cook 😢</span>"
+      "username": "Wild_Heart654",
+      "aka": "Wild",
+      "userid": "4119060167",
+      "rank": "Developer",
+      "desc_html": "👇😃🦊🥈"
     }
   ]
   
